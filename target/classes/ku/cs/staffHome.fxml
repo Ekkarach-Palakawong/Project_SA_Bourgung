@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.controllers.StaffHomeController">
+   <children>
+      <ImageView fitHeight="639.0" fitWidth="817.0" layoutY="-12.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../image/ภาพถ่ายหน้าจอ%202565-11-12%20เวลา%2011.59.16.png" />
+         </image>
+      </ImageView>
+      <Button id="sideNavBtn" alignment="TOP_LEFT" layoutX="178.0" layoutY="186.0" mnemonicParsing="false" onAction="#staffPrepareButton" prefHeight="53.0" prefWidth="200.0" text="เตรียมบ่อ" textFill="#111010">
+         <graphic>
+            <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../image/Mycomplaint icon.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button id="sideNavBtn1" layoutX="397.0" layoutY="494.0" mnemonicParsing="false" onAction="#logoutBtn" text="logout" />
+      <Button id="sideNavBtn" alignment="TOP_LEFT" layoutX="457.0" layoutY="186.0" mnemonicParsing="false" onAction="#staffGetShrimpButton" prefHeight="50.0" prefWidth="200.0" text="รับกุ้ง" textFill="#030303">
+         <graphic>
+            <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../image/img.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button id="sideNavBtn" alignment="TOP_LEFT" layoutX="179.0" layoutY="289.0" mnemonicParsing="false" onAction="#staffShrimpFarmingButton" prefHeight="50.0" prefWidth="200.0" text="การเลี้ยงดูกุ้ง" textFill="#030303">
+         <graphic>
+            <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../image/img.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button id="sideNavBtn" alignment="TOP_LEFT" layoutX="455.0" layoutY="290.0" mnemonicParsing="false" onAction="#staffQCButton" prefHeight="53.0" prefWidth="200.0" text="Q.C." textFill="#111010">
+         <graphic>
+            <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../image/Mycomplaint%20icon.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button id="sideNavBtn" alignment="TOP_LEFT" layoutX="182.0" layoutY="396.0" mnemonicParsing="false" onAction="#staffDeliveryButton" prefHeight="50.0" prefWidth="200.0" text="ส่งของ" textFill="#030303">
+         <graphic>
+            <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../image/Mycomplaint%20icon.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

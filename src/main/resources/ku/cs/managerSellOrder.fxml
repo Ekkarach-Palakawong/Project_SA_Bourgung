@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" stylesheets="@../../css/style1.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.controllers.ManagerSellOrderController">
+   <children>
+      <ImageView fitHeight="609.0" fitWidth="915.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../image/SellOrder.png" />
+         </image></ImageView>
+      <TextField fx:id="nameTextField" layoutX="404.0" layoutY="123.0" prefHeight="41.0" prefWidth="310.0" promptText="ชื่อ-นามสกุล ลูกค้า" />
+      <TextField fx:id="phoneTextField" layoutX="404.0" layoutY="185.0" prefHeight="42.0" prefWidth="310.0" promptText="เบอร์โทรศัพท์" />
+      <Button layoutX="94.0" layoutY="540.0" mnemonicParsing="false" onAction="#backBtn" text="Back" />
+      <Button layoutX="410.0" layoutY="524.0" mnemonicParsing="false" onAction="#checkStockButton" prefHeight="34.0" prefWidth="310.0" text="ถัดไป" />
+
+      <Button fx:id="codeOneButton" layoutX="415.0" layoutY="476.0" mnemonicParsing="false" onAction="#pressOnCodeOneButton" prefHeight="34.0" prefWidth="99.0" text="บัตรเครดิต" />
+      <Button fx:id="codeTwoButton" layoutX="514.0" layoutY="476.0" mnemonicParsing="false" onAction="#pressOnCodeTwoButton" prefHeight="34.0" prefWidth="99.0" text="โอนจ่าย" />
+      <Button fx:id="codeThreeButton" layoutX="613.0" layoutY="476.0" mnemonicParsing="false" onAction="#pressOnCodeThreeButton" prefHeight="34.0" prefWidth="99.0" text="เงินสด" />
+
+<!--      <Button layoutX="415.0" layoutY="481.0" mnemonicParsing="false" onAction="#checkStockButton" prefHeight="34.0" prefWidth="99.0" text="บัตรเครดิต" />-->
+<!--      <Button layoutX="514.0" layoutY="481.0" mnemonicParsing="false" onAction="#checkStockButton" prefHeight="34.0" prefWidth="99.0" text="โอนจ่าย" />-->
+<!--      <Button layoutX="613.0" layoutY="481.0" mnemonicParsing="false" onAction="#checkStockButton" prefHeight="34.0" prefWidth="99.0" text="เงินสด" />-->
+      <Label layoutX="415.0" layoutY="437.0" text="ประเภทการจ่ายเงิน">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="addressTextArea" layoutX="404.0" layoutY="254.0" prefHeight="164.0" prefWidth="310.0" promptText="ที่อยู่จัดส่ง" />
+      <TableView fx:id="customerTableView" layoutX="96.0" layoutY="122.0" prefHeight="350.0" prefWidth="289.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="C1" />
+          <TableColumn prefWidth="75.0" text="C2" />
+        </columns>
+      </TableView>
+      <Label fx:id="warningLabel" alignment="CENTER" layoutX="139.0" layoutY="501.0" prefHeight="18.0" prefWidth="204.0" text="warningLabel" textAlignment="CENTER" />
+   </children>
+</AnchorPane>

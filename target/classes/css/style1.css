@@ -1,0 +1,203 @@
+AnchorPane {
+     -fx-background-color: linear-gradient(to left,#8e9eab,#eef2f3);
+          -fx-border-color : black;
+}
+#Ancp {
+ -fx-background-color: #7e7e7e;
+}
+TextField {-fx-border-radius : 5px}
+PasswordField {-fx-border-radius : 5px}
+
+Label {
+    -fx-font-weight: bold;
+    -fx-text-fill: rgba(0,0,0,87);
+}
+
+
+Button {
+      -fx-background-color: #FFD439;
+      -fx-text-fill: black;
+      -fx-background-radius : 5;
+      -fx-font-size : 12px;
+}
+#bgc1 {
+    -fx-background-color: linear-gradient(to left,#12c2e9,#c471ed);
+    -fx-border-color : black;
+}
+Button :hover {
+    -fx-font-weight: bold;
+    -fx-font-size: 1em;
+    -fx-background-radius: 5;
+}
+.choice-box {
+    -fx-background-color: white;/*#DEDEDE*/
+    -fx-background-radius: 15px;
+    -fx-border-radius: 15px;
+    -fx-mark-color: red;
+    -fx-border-color: black;
+}
+.choice-box .context-menu {
+    -fx-background-color: #DEDEDE;
+    -fx-background-radius: 15px;
+    -fx-border-radius: 15px;
+    -fx-border-color: black;
+}
+.choice-box .menu-item:focused {
+    -fx-background-color: #D4D4D4;
+    -fx-background-radius: 15px;
+}
+.choice-box .menu-item > .label {-fx-text-fill: black;}
+
+.table-view {
+    -fx-background-color: transparent;
+}
+.table-view .column-header-background .filler {
+    -fx-background-color: transparent;
+}
+.table-view .column-header-background{
+    -fx-background-color: white;/*linear-gradient(to bottom, rgba(255,255,255,0.38), #e4e5f1)*/
+    -fx-background-radius: 10px 10px 0px 0px;
+    -fx-background-insets: 0 0px 0 0;
+    -fx-padding: 0 0 5px 0;
+}
+.table-view .column-header {
+    -fx-background-color: transparent;
+}
+.table-view .table-cell{
+    -fx-border-color: transparent;
+    -fx-padding: 2 0 2 10px;
+}
+
+.table-row-cell:hover {
+    -fx-background-color: #FDFD96;
+}
+
+.table-row-cell{
+    -fx-cell-size : 40px;
+    -fx-background-color: white;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em;
+    -fx-text-background-color: rgba(0,0,0,87);
+    -fx-border-width: 5px 0 0px 0;
+    -fx-border-color: #F0F2F5;
+}
+.table-view .virtual-flow .scroll-bar:vertical,
+.table-view .virtual-flow .scroll-bar:vertical .track,
+.table-view .virtual-flow .scroll-bar:vertical .track-background,
+.table-view .virtual-flow .scroll-bar:horizontal,
+.table-view .virtual-flow .scroll-bar:horizontal .track,
+.table-view .virtual-flow .scroll-bar:horizontal .track-background {
+    -fx-background-color: transparent;
+}
+.table-view .virtual-flow .scroll-bar:vertical .thumb{
+    -fx-background-color:  #646464;
+}
+
+.table-view .virtual-flow .scroll-bar:horizontal .thumb {
+    -fx-background-color:  #646464;
+}
+
+/* white mode */
+#changeProfileLeft{
+ -fx-background-color :  #6f8faf;
+}
+#changeProfileRight{
+ -fx-background-color :  #e8f0fe;
+}
+/* white mode */
+
+
+
+#inputArea {
+    -fx-background-radius: 15;
+}
+#bgc{
+    -fx-background-color : #ECECEC;
+}
+
+#frame{
+    -fx-background-color : white;
+}
+#frame1{
+    -fx-background-color : white;
+    -fx-background-radius : 5;
+    -fx-effect: dropShadow(three-pass-box, rgba(0,0,0,0.1), 10.0, 0.0, 0.0, 9.5);
+}
+
+
+
+/* --------------------------------------------------------------------------------------------------------------------- */
+#btn {
+    -fx-background-color : #FFF2F2;
+    -fx-background-radius : 15;
+    -fx-text-fill : black;
+
+}
+#btn1 {
+    -fx-background-color : #ffffff;
+    -fx-background-radius : 15;
+    -fx-text-fill : black;
+
+}
+
+
+
+#sep {
+    -fx-background-color : #DD974A;
+}
+#sep1 {
+    -fx-background-color : #FFD439;
+}
+#btn:hover{
+    -fx-background-color : #EF9F9F;
+    -fx-text-fill : white;
+}
+#glass{ /*boost*/
+    -fx-background-color:
+            #c3c4c4,
+            linear-gradient(#d6d6d6 50%, white 100%),
+            radial-gradient(center 50% -40%, radius 200%, #e6e6e6 45%, rgba(230,230,230,0) 50%);
+    -fx-background-radius: 30;
+    -fx-background-insets: 0,1,1;
+    -fx-text-fill: black;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 3, 0.0 , 0 , 1 );
+}
+#glass:hover{
+    -fx-effect: dropshadow( three-pass-box , rgba(255,255,255,0.2) , 1, 0.0 , 0 , 1);
+}
+/* --------------------------------------------------------------------------------------------------------------------- */
+/* boost */
+#sidePane {
+    -fx-background-color: #383E4E;
+}
+#sideNav {
+    -fx-background-color: #383E4E;
+}
+#sideNavText {
+    -fx-background-color: #383E4E;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+}
+#sideNavBtn {
+    -fx-background-color: #383E4E;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+}
+#sideNavBtn1 {
+    -fx-background-color: #FFD439;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+}
+
+#sideNavBtn:hover {
+    -fx-background-color: #FFD439;
+    -fx-font-weight: bold;
+    -fx-font-size: 1.3em;
+    -fx-text-fill: white;
+}
+
+/* --------------------------------------------------------------------------------------------------------------------- */
+#errL {
+    -fx-text-fill : red;
+    -fx-font-weight: bold;
+}

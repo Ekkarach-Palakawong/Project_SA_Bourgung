@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.controllers.ManagerPrepareBorgungController">
+   <children>
+      <ImageView fitHeight="773.0" fitWidth="804.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../image/ภาพถ่ายหน้าจอ%202565-11-12%20เวลา%2012.11.29.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="96.0" layoutY="539.0" mnemonicParsing="false" onAction="#backBtn" text="back" />
+      <Label fx:id="pondIdLabel" layoutX="209.0" layoutY="392.0" prefHeight="17.0" prefWidth="138.0" text="pondIdLabel">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <Label layoutX="124.0" layoutY="392.0" text="เลขบ่อ :">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="428.0" layoutY="364.0" text="รายละเอียดเพิ่มเติม">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="119.0" layoutY="454.0" text="พนักงาน:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="employeeLabel" layoutX="209.0" layoutY="454.0" prefHeight="17.0" prefWidth="211.0" text="employeeLabel">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <Button layoutX="417.0" layoutY="521.0" mnemonicParsing="false" onAction="#clickFinishedButton" prefHeight="39.0" prefWidth="326.0" text="เตรียมบ่อ" />
+      <TextArea fx:id="infoTextArea" layoutX="417.0" layoutY="392.0" prefHeight="111.0" prefWidth="326.0" />
+      <Label fx:id="finishLB" layoutX="209.0" layoutY="527.0" prefHeight="27.0" prefWidth="183.0" text="employeeLabel">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TableView fx:id="pondTableView" layoutX="96.0" layoutY="107.0" prefHeight="249.0" prefWidth="307.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="C1" />
+          <TableColumn prefWidth="75.0" text="C2" />
+        </columns>
+      </TableView>
+      <TableView fx:id="employeeTableView" layoutX="428.0" layoutY="107.0" prefHeight="249.0" prefWidth="307.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="C1" />
+          <TableColumn prefWidth="75.0" text="C2" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

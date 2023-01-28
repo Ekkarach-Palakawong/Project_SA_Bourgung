@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.controllers.ManagerHomeController">
+   <children>
+      <ImageView fitHeight="615.0" fitWidth="817.0" layoutX="-5.0" layoutY="-5.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../image/ภาพถ่ายหน้าจอ%202565-11-12%20เวลา%2011.59.16.png" />
+         </image>
+      </ImageView>
+      <Button id="sideNavBtn" alignment="TOP_LEFT" layoutX="316.0" layoutY="161.0" mnemonicParsing="false" onAction="#toPrepareBorgung" prefHeight="53.0" prefWidth="200.0" text="สั่งเตรียมบ่อ" textFill="#111010">
+         <graphic>
+            <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../image/Mycomplaint icon.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button id="sideNavBtn" alignment="TOP_LEFT" layoutX="317.0" layoutY="274.0" mnemonicParsing="false" onAction="#toOrderShrimp" prefHeight="50.0" prefWidth="200.0" text="สั่งกุ้ง" textFill="#030303">
+         <graphic>
+            <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../image/img.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button id="sideNavBtn1" layoutX="381.0" layoutY="493.0" mnemonicParsing="false" onAction="#logoutBtn" text="logout" />
+      <Button id="sideNavBtn" alignment="TOP_LEFT" layoutX="318.0" layoutY="387.0" mnemonicParsing="false" onAction="#toCheckStock" prefHeight="53.0" prefWidth="200.0" text="กรอกรายละเอียดการสั่งซื้อ" textFill="#111010">
+         <graphic>
+            <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../image/complain.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

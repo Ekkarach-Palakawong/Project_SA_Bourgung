@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.controllers.ManagerCreatePurchaseOrderController">
+    <children>
+      <ImageView fitHeight="607.0" fitWidth="810.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../image/createPurchase.png" />
+         </image>
+      </ImageView>
+
+        <Label layoutX="197.0" layoutY="285.0" prefHeight="27.0" prefWidth="161.0" text="ประเภทการจ่ายเงิน">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+        <Label layoutX="197.0" layoutY="236.0" text="ราคา">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+        <Label layoutX="197.0" layoutY="339.0" text="ชื่อผู้ซื้อ">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+        <Label layoutX="197.0" layoutY="403.0" text="เบอร์โทรศัพท์">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+        <Label fx:id="purchaseTypeLabel" layoutX="461.0" layoutY="286.0" text="purchaseTypeLabel">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Label fx:id="priceLabel" layoutX="461.0" layoutY="237.0" text="priceLabel">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Label fx:id="customerLabel" layoutX="461.0" layoutY="336.0" text="customerLabel">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Label fx:id="phoneLabel" layoutX="461.0" layoutY="400.0" text="phoneLabel">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+      <Label layoutX="195.0" layoutY="126.0" text="ประเภทกุ้ง">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="197.0" layoutY="176.0" text="จำนวนกุ้ง">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="amountLabel" layoutX="461.0" layoutY="177.0" text="amountLabel">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="prawnLabel" layoutX="461.0" layoutY="127.0" text="prawnLabel">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="197.0" layoutY="487.0" mnemonicParsing="false" onAction="#enterButton" prefHeight="42.0" prefWidth="448.0" text="เสร็จสิ้น" />
+      <Button layoutX="101.0" layoutY="534.0" mnemonicParsing="false" onAction="#backBtn" prefHeight="26.0" prefWidth="58.0" text="ยกเลิก" />
+    </children>
+</AnchorPane>

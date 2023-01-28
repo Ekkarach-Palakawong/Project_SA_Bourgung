@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="900.0" stylesheets="@../../css/style1.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.controllers.StaffPrepareBorgungController">
+   <children>
+      <ImageView fitHeight="605.0" fitWidth="944.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../image/ภาพถ่ายหน้าจอ%202565-11-12%20เวลา%2012.11.29.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="102.0" layoutY="528.0" mnemonicParsing="false" onAction="#BackButton" prefHeight="26.0" prefWidth="51.0" text="back" />
+      <Label layoutX="400.0" layoutY="203.0" text="สถานะ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="378.0" layoutY="449.0" mnemonicParsing="false" onAction="#enterInProgressButton" prefHeight="35.0" prefWidth="173.0" text="ดำเนินการ" />
+      <Label fx:id="pondIdLabel" layoutX="564.0" layoutY="151.0" prefHeight="27.0" prefWidth="136.0" text="pondIdLabel">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Button layoutX="556.0" layoutY="448.0" mnemonicParsing="false" onAction="#enterFinishProgressButton" prefHeight="35.0" prefWidth="174.0" text="เสร็จสิ้น" />
+      <Label layoutX="400.0" layoutY="265.0" prefHeight="27.0" prefWidth="90.0" text="หมายเหตุ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="398.0" layoutY="151.0" text="หมายเลขบ่อ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="pondStatusLabel" layoutX="564.0" layoutY="203.0" prefHeight="27.0" prefWidth="153.0" text="pondStatusLabel">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="preparePondStatusLabel" layoutX="396.0" layoutY="309.0" prefHeight="27.0" prefWidth="355.0" text="preparePondStatusLabel">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TableView fx:id="preparePondTableView" layoutX="102.0" layoutY="150.0" prefHeight="350.0" prefWidth="268.0">
+        <columns>
+          <TableColumn prefWidth="69.0" text="C1" />
+          <TableColumn prefWidth="81.0" text="C2" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" stylesheets="@../../css/style1.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.controllers.StaffAddShrimpController">
+    <children>
+      <ImageView fitHeight="619.0" fitWidth="811.0" layoutX="-9.0" layoutY="-7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../image/ภาพถ่ายหน้าจอ%202565-11-12%20เวลา%2022.12.51.png" />
+         </image>
+      </ImageView>
+        <Button layoutX="79.0" layoutY="541.0" mnemonicParsing="false" onAction="#BackButton" prefHeight="27.0" prefWidth="54.0" text="back" />
+        <Label layoutX="421.0" layoutY="187.0" text="สถานะบ่อ">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="421.0" layoutY="140.0" text="IDบ่อกุ้ง">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="421.0" layoutY="230.0" text="จำนวนกุ้ง">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="421.0" layoutY="276.0" text="พันธุ์กุ้ง">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="423.0" layoutY="324.0" text="รหัสใบรับกุ้ง">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Button layoutX="400.0" layoutY="481.0" mnemonicParsing="false" onAction="#enterButton" prefHeight="35.0" prefWidth="334.0" text="เสร็จสิ้น" />
+      <TextField fx:id="dateTextField" layoutX="562.0" layoutY="370.0" prefHeight="35.0" prefWidth="149.0" />
+      <TextField fx:id="roundTextField" layoutX="562.0" layoutY="420.0" prefHeight="35.0" prefWidth="149.0" />
+      <Label layoutX="422.0" layoutY="370.0" text="วันที่ลงบ่อ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="423.0" layoutY="424.0" text="รอบการลงบ่อ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="188.0" layoutY="111.0" text="รายการบ่อกุ้ง">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="pondIdLabel" layoutX="567.0" layoutY="140.0" text="pondIdLabel">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="pondStatusLabel" layoutX="567.0" layoutY="187.0" text="pondStatusLabel">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="shrimpQuantityLabel" layoutX="562.0" layoutY="230.0" text="shrimpQuantityLabel">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="shrimpIdLabel" layoutX="562.0" layoutY="276.0" text="shrimpIdLabel">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="vendorOrderLabel" layoutX="562.0" layoutY="324.0" text="vendorOrderLabel">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="warningLabel" alignment="CENTER" layoutX="403.0" layoutY="530.0" prefHeight="22.0" prefWidth="327.0" text="warningLabel" textAlignment="CENTER" textFill="RED">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TableView fx:id="pondTableView" layoutX="106.0" layoutY="144.0" prefHeight="374.0" prefWidth="266.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="C1" />
+          <TableColumn prefWidth="75.0" text="C2" />
+        </columns>
+      </TableView>
+    </children>
+</AnchorPane>

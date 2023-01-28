@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" stylesheets="@../../css/style1.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.controllers.StaffQcController">
+   <children>
+      <ImageView fitHeight="634.0" fitWidth="806.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../image/ภาพถ่ายหน้าจอ%202565-11-12%20เวลา%2022.16.23.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="failedReason" disable="true" layoutX="526.0" layoutY="421.0" prefHeight="83.0" prefWidth="200.0" promptText="สาเหตุที่ไม่ผ่านการ Q.C" />
+      <Button layoutX="85.0" layoutY="536.0" mnemonicParsing="false" onAction="#BackButton" prefHeight="32.0" prefWidth="58.0" text="back" />
+      <Button layoutX="386.0" layoutY="533.0" mnemonicParsing="false" onAction="#clickFinishedButton" prefHeight="32.0" prefWidth="346.0" text="เสร็จสิ้น" />
+      <Button fx:id="passedButton" layoutX="526.0" layoutY="369.0" mnemonicParsing="false" onAction="#clickOnPassedButton" prefHeight="26.0" prefWidth="95.0" text="ผ่าน" />
+      <Button fx:id="failedButton" layoutX="633.0" layoutY="368.0" mnemonicParsing="false" onAction="#clickOnFailedButton" prefHeight="28.0" prefWidth="95.0" text="ไม่ผ่าน" />
+      <Label layoutX="382.0" layoutY="319.0" text="เวลา Q.C.">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="385.0" layoutY="370.0" text="เงื่อนไข">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="377.0" layoutY="191.0" text="รหัสบ่อกุ้ง">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="qcTimeTextField" layoutX="526.0" layoutY="319.0" prefHeight="26.0" prefWidth="200.0" />
+      <Label fx:id="pondIdLabel" layoutX="526.0" layoutY="191.0" text="pondId">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="387.0" layoutY="421.0" text="หมายเหตุ">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="377.0" layoutY="233.0" text="น้ำหนัก">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="379.0" layoutY="274.0" text="สถานะการเลี้ยงกุ้ง">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="measureWeightLabel" layoutX="526.0" layoutY="233.0" text="measureWeight">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="manageStatusLabel" layoutX="526.0" layoutY="274.0" text="manageStatus">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TableView fx:id="farmingTableView" layoutX="102.0" layoutY="134.0" prefHeight="342.0" prefWidth="249.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="C1" />
+          <TableColumn prefWidth="75.0" text="C2" />
+        </columns>
+      </TableView>
+      <Label fx:id="warningLabel" layoutX="102.0" layoutY="495.0" prefHeight="18.0" prefWidth="300.0" text="warningLabel" />
+   </children>
+</AnchorPane>

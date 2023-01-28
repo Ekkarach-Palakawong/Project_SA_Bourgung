@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" stylesheets="@../../css/style1.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.controllers.ManagerOrderShrimpController">
+
+   <children>
+      <ImageView fitHeight="614.0" fitWidth="851.0" layoutX="-1.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../image/ภาพถ่ายหน้าจอ%202565-11-12%20เวลา%2020.26.19.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="86.0" layoutY="541.0" mnemonicParsing="false" onAction="#backBtn" prefHeight="26.0" prefWidth="41.0" text="back" />
+      <Button layoutX="403.0" layoutY="457.0" mnemonicParsing="false" onAction="#clickFinishedButton" prefHeight="36.0" prefWidth="291.0" text="บันทึก" />
+      <TextField fx:id="shopNameField" layoutX="403.0" layoutY="354.0" prefHeight="36.0" prefWidth="291.0" promptText="ชื่อร้าน" />
+      <TextField fx:id="prawnAmountField" layoutX="403.0" layoutY="253.0" prefHeight="36.0" prefWidth="291.0" promptText="จำนวนกุ้ง" />
+      <Label layoutX="402.0" layoutY="144.0" text="สายพันธุ์:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="prawnTypeLabel" layoutX="501.0" layoutY="144.0" prefHeight="27.0" prefWidth="170.0" text="prawnTypeLabel">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <TableView fx:id="prawnTableView" layoutX="97.0" layoutY="115.0" prefHeight="378.0" prefWidth="258.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="C1" />
+          <TableColumn prefWidth="75.0" text="C2" />
+        </columns>
+      </TableView>
+      <Label layoutX="402.0" layoutY="218.0" text="จำนวนกุ้งที่ซื้อ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="402.0" layoutY="320.0" text="ร้านค้า">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="warningLabel" layoutX="406.0" layoutY="428.0" text="warningLabel" />
+   </children>
+</AnchorPane>
